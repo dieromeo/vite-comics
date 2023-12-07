@@ -12,8 +12,10 @@ export default {
 <template>
     <div class="bottom-bar">
         <div class="container">
-            <SignupButton></SignupButton>
-            <Social></Social>
+            <div class="ft-content">
+                <SignupButton></SignupButton>
+                <Social></Social>
+            </div>
         </div>
     </div>
 </template>
@@ -23,5 +25,11 @@ export default {
 
 .bottom-bar {
     background-color: $footer-bg;
+
+    .ft-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 </style>
