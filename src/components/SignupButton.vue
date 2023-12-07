@@ -23,5 +23,6 @@ button {
     border: 2px solid $button-br;
     margin: 20px 0;
     font-size: 14px;
+    cursor: pointer;
 }
 </style>
