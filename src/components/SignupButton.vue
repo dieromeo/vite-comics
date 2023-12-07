@@ -1,7 +1,26 @@
 <script>
 export default {
-    name: ''
+    name: 'SignupButton',
+    data() {
+        return {
+            buttonContent: 'Sign-up now'
+        }
+    }
 }
 </script>
-<template></template>
-<style lang="scss"></style>
+
+<template>
+    <button>{{ buttonContent.toUpperCase() }}</button>
+</template>
+
+<style lang="scss" scoped>
+@use '../style/main.scss' as *;
+
+button {
+    all: unset;
+    color: white;
+    padding: 15px;
+    border: 2px solid $button-br;
+    margin: 20px 0;
+}
+</style>

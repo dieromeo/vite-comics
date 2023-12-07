@@ -1,9 +1,23 @@
 <script>
+import FooterBottomBar from './FooterBottomBar.vue';
+
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    components: {
+        FooterBottomBar,
+    }
 }
 </script>
+
 <template>
-    <footer>footer</footer>
+    <footer>
+        <FooterBottomBar></FooterBottomBar>
+    </footer>
 </template>
-<style lang="scss"></style>
+
+<style lang="scss">
+footer {
+    background-image: url(../../public/img/footer-bg.jpg);
+    background-size: cover;
+}
+</style>

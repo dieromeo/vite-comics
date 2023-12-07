@@ -11,14 +11,22 @@ export default {
 </script>
 <template>
     <header>
-        <Logo></Logo>
-        <HeaderMenu></HeaderMenu>
+        <div class="container">
+            <Logo></Logo>
+            <HeaderMenu></HeaderMenu>
+        </div>
     </header>
 </template>
+
 <style lang="scss">
-header {
+.container {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 </style>

@@ -1,7 +1,9 @@
 <script>
 export default {
-    name: ''
+    name: 'Social'
 }
 </script>
-<template></template>
+<template>
+    social
+</template>
 <style lang="scss"></style>
