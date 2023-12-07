@@ -1,3 +1,19 @@
+$main-bg: #1c1c1c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: red;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+main {
+    background-color: $main-bg;
 }
