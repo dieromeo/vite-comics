@@ -20,7 +20,7 @@ export default {
     <h2>{{ title.toUpperCase() }}</h2>
     <ul>
         <li v-for="content in contents">
-            <a :href="contents.link">{{ content.name }}</a>
+            <a :href="content.link">{{ content.name }}</a>
         </li>
     </ul>
 </template>
