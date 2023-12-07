@@ -18,15 +18,20 @@ export default {
 <template>
     <div class="top-bar">
         <div class="container">
-            <div>
-                <DcComicsMenu></DcComicsMenu>
-                <ShopMenu></ShopMenu>
+            <div class="left">
+                <div>
+                    <DcComicsMenu></DcComicsMenu>
+                    <ShopMenu></ShopMenu>
+                </div>
+                <div>
+                    <DcMenu></DcMenu>
+                </div>
+                <div>
+                    <SitesMenu></SitesMenu>
+                </div>
             </div>
-            <div>
-                <DcMenu></DcMenu>
-            </div>
-            <div>
-                <SitesMenu></SitesMenu>
+            <div class="right">
+                <img src="../../public/img/dc-logo-bg.png" alt="">
             </div>
         </div>
     </div>
@@ -38,10 +43,10 @@ export default {
 .top-bar {
     background-image: url('../../public/img/footer-bg.jpg');
     background-size: cover;
-    padding: 45px 0 40px 0;
 
     h2 {
         color: $titles;
+        font-size: 18px;
     }
 
     ul {
@@ -56,10 +61,31 @@ export default {
     a {
         text-decoration: none;
         color: $footer-list;
+        font-size: 12px;
     }
 
     .container {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        padding: 45px 0 40px 0;
+
+        .left {
+            display: flex;
+
+            div {
+                margin-right: 30px;
+            }
+        }
+
+        .right img {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
     }
 }
 </style>
