@@ -4,16 +4,16 @@ export default {
     data() {
         return {
             menu: [
-                { name: 'Characters', link: '#' },
-                { name: 'Comics', link: '#' },
-                { name: 'Movies', link: '#' },
-                { name: 'Tv', link: '#' },
-                { name: 'Games', link: '#' },
-                { name: 'Collectibles', link: '#' },
-                { name: 'Videos', link: '#' },
-                { name: 'Fans', link: '#' },
-                { name: 'News', link: '#' },
-                { name: 'Shop', link: '#' },
+                { name: 'Characters', link: '#', status: false },
+                { name: 'Comics', link: '#', status: true },
+                { name: 'Movies', link: '#', status: false },
+                { name: 'Tv', link: '#', status: false },
+                { name: 'Games', link: '#', status: false },
+                { name: 'Collectibles', link: '#', status: false },
+                { name: 'Videos', link: '#', status: false },
+                { name: 'Fans', link: '#', status: false },
+                { name: 'News', link: '#', status: false },
+                { name: 'Shop', link: '#', status: false },
             ]
         }
     }
@@ -22,16 +22,23 @@ export default {
 
 <template>
     <ul class="menu">
-        <li v-for="element in menu"><a :href="element.link">{{ element.name.toUpperCase() }}</a></li>
+        <li v-for="element in menu" :class="element.status === true ? 'active' : ''"><a :href="element.link">{{
+            element.name.toUpperCase() }}</a></li>
     </ul>
 </template>
 
 <style lang="scss">
+@use '../style/main.scss' as *;
+
 .menu {
     display: flex;
     list-style: none;
     gap: 35px;
-    height: 100%;
+    align-items: center;
+
+    li {
+        line-height: 7.5;
+    }
 
     a {
         text-decoration: none;
