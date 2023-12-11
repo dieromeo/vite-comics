@@ -1,9 +1,11 @@
 <script>
 import Card from './Card.vue';
+import BlueButton from './BlueButton.vue';
 export default {
     name: 'ContentMain',
     components: {
         Card,
+        BlueButton
     },
     data() {
         return {
@@ -87,9 +89,16 @@ export default {
 </script>
 
 <template>
+    <div class="jumbo">
+        <img src="../../img/jumbotron.jpg" alt="">
+    </div>
     <div class="container">
+        <div class="current">current series</div>
         <div class="card-container">
             <Card v-for="card in cards" :image="card.thumb" :title="card.series" />
+        </div>
+        <div class="more">
+            <BlueButton />
         </div>
     </div>
 </template>
@@ -97,8 +106,36 @@ export default {
 <style lang="scss" scoped>
 @use '../style/main.scss' as *;
 
+.jumbo {
+    height: 400px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.current {
+    color: $titles;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: $button-br;
+    padding: 10px 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+}
+
 .container {
     margin: 0 auto;
+    position: relative;
+
+    .more {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .card-container {
