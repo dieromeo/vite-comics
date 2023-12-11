@@ -4,7 +4,7 @@ export default {
     data() {
         return {
             logo: {
-                immagine: '../../public/img/dc-logo.png',
+                immagine: '../../img/dc-logo.png',
                 alt: 'logo dc'
             }
         }

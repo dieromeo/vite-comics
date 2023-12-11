@@ -4,11 +4,11 @@ export default {
     data() {
         return {
             items: [
-                { image: '../../public/img/buy-comics-digital-comics.png', description: 'Digital comics', link: '#' },
-                { image: '../../public/img/buy-comics-merchandise.png', description: 'Dc Merchandise', link: '#' },
-                { image: '../../public/img/buy-comics-subscriptions.png', description: 'Subscription', link: '#' },
-                { image: '../../public/img/buy-comics-shop-locator.png', description: 'Comic shop locator', link: '#' },
-                { image: '../../public/img/buy-dc-power-visa.svg', description: 'Dc power visa', link: '#' },
+                { image: '../../img/buy-comics-digital-comics.png', description: 'Digital comics', link: '#' },
+                { image: '../../img/buy-comics-merchandise.png', description: 'Dc Merchandise', link: '#' },
+                { image: '../../img/buy-comics-subscriptions.png', description: 'Subscription', link: '#' },
+                { image: '../../img/buy-comics-shop-locator.png', description: 'Comic shop locator', link: '#' },
+                { image: '../../img/buy-dc-power-visa.svg', description: 'Dc power visa', link: '#' },
             ]
         }
     }

@@ -5,11 +5,11 @@ export default {
         return {
             title: 'follow up',
             socials: [
-                { name: 'Facebook', src: '../../public/img/footer-facebook.png', link: '#' },
-                { name: 'Twitter', src: '../../public/img/footer-twitter.png', link: '#' },
-                { name: 'Youtube', src: '../../public/img/footer-youtube.png', link: '#' },
-                { name: 'Pinterest', src: '../../public/img/footer-pinterest.png', link: '#' },
-                { name: 'Maps', src: '../../public/img/footer-periscope.png', link: '#' },
+                { name: 'Facebook', src: '../../img/footer-facebook.png', link: '#' },
+                { name: 'Twitter', src: '../../img/footer-twitter.png', link: '#' },
+                { name: 'Youtube', src: '../../img/footer-youtube.png', link: '#' },
+                { name: 'Pinterest', src: '../../img/footer-pinterest.png', link: '#' },
+                { name: 'Maps', src: '../../img/footer-periscope.png', link: '#' },
             ]
         }
     }
